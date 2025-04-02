@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "noEmit": true,
+    // 如果使用其他构建工具如 webpack
+    "jsx": "react-jsx",
+    // React 17+ 自动导入
+    "allowSyntheticDefaultImports": true
+  }
+}

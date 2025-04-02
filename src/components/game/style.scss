@@ -1,0 +1,28 @@
+.box{
+  border: 1px solid #000000;
+  width: 50px;
+  line-height: 50px;
+  min-height: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  user-select: none;
+}
+.win{
+  color:red
+}
+.container{
+  margin: 0 auto;
+  width: 156px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #000000;
+}
+.title{
+  text-align: center;
+}
+.game{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
