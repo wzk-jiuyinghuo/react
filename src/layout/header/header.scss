@@ -1,0 +1,37 @@
+.header-container{
+  padding: 0  50px 0 0;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-logo{
+  width: 50px;
+  text-align: center;
+}
+.header-title{
+  width: 300px;
+  font-size: 20px;
+}
+.header-menu{
+  flex: 1;
+  display: flex;
+  font-size: 20px;
+
+  .menu-item{
+    line-height: 46px;
+    user-select: none;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin: 0 10px;
+  }
+  .active{
+    color: #4976eb;
+    border-bottom: 4px solid #4976eb;
+  }
+}
+.header-setting{
+  width: 300px;
+}

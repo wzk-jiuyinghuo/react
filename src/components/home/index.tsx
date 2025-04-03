@@ -2,6 +2,7 @@ import { Outlet, useNavigate } from "react-router-dom";
 import { Layout } from "antd";
 import "./index.scss";
 import { useEffect } from "react";
+import LayoutMyHeader from "../../layout/header";
 const { Header, Sider, Content } = Layout;
 export default function Home() {
   const navigate = useNavigate();
@@ -44,10 +45,14 @@ export default function Home() {
   return (
     <div>
       <Layout className="app-container">
-        <Header>Header</Header>
+        <Header className="layout-header">
+          <LayoutMyHeader></LayoutMyHeader>
+        </Header>
         <Layout>
-          <Sider>Sider</Sider>
-          <Content>
+          <Sider width="50px" className="layout-sider">
+            Sider
+          </Sider>
+          <Content className="layout-content">
             <Outlet></Outlet>
           </Content>
         </Layout>

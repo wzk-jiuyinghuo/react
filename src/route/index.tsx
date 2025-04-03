@@ -36,11 +36,11 @@ export default function MyRoute() {
         ></Route>
         <Route
           path="/doctorWorkstations/assess"
-          element={<DoctorPatient />}
+          element={<DoctorAssess />}
         ></Route>
         <Route
           path="/doctorWorkstations/patient"
-          element={<DoctorAssess />}
+          element={<DoctorPatient />}
         ></Route>
       </Route>
       <Route path="/login" element={<Login />}></Route>
