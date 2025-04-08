@@ -37,11 +37,7 @@ export default function Home() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-  function handleLogout() {
-    localStorage.removeItem("accessToken");
-    localStorage.removeItem("authToken");
-    navigate("/login");
-  }
+
   return (
     <div>
       <Layout className="app-container">

@@ -1,37 +1,89 @@
-.header-container{
-  padding: 0  50px 0 0;
+.header-container {
+  padding: 0 50px 0 0;
   height: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.header-logo{
+.header-logo {
   width: 50px;
   text-align: center;
 }
-.header-title{
+.header-title {
   width: 300px;
   font-size: 20px;
 }
-.header-menu{
+.header-menu {
   flex: 1;
   display: flex;
   font-size: 20px;
 
-  .menu-item{
+  .menu-item {
     line-height: 46px;
     user-select: none;
     cursor: pointer;
     width: 150px;
     text-align: center;
     margin: 0 10px;
+    position: relative;
   }
-  .active{
+  .menu-item:hover {
     color: #4976eb;
     border-bottom: 4px solid #4976eb;
   }
+  .active {
+    color: #4976eb;
+    border-bottom: 4px solid #4976eb;
+  }
+  .remaining-menu {
+    display: none;
+    position: absolute;
+    left: -1px;
+    padding: 5px;
+    transform: translateY(4px);
+    color: #000000;
+    border: 1px solid #000000;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: white; // 添加背景色
+    z-index: 999; // 确保悬浮层在最前
+  }
+  // 添加专属类名
+  .menu-item-more:hover .remaining-menu {
+    display: block !important;
+  }
+  .menu-item-remaining {
+    width: 140px;
+  }
+  .menu-item-remaining:hover {
+    color: #4976eb;
+    background-color: #f5f5f5;
+  }
 }
-.header-setting{
+.header-setting {
+  user-select: none;
+  cursor: pointer;
   width: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .icon{
+    font-size: 18px;
+    margin: 0 10px;
+  }
+  .user-name{
+    border: 1px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    .name{
+      font-size: 20px;
+      line-height: 40px;
+      display: inline-block;
+      padding: 0 10px;
+      background-color: #000000;
+      color:#fff
+    }
+  }
 }
